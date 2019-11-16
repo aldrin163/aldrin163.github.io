@@ -1,0 +1,9 @@
+*{
+    background-image: url(assets/bg.jpg);
+    /* background-size: cover; */
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #ccc;
+    /* border: 1px solid; */
+}
