@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="./materialize_min.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>FoodArena</title>
+</head>
+
+<body>
+	<header id="landing-page">
+		<nav class="nav-wrapper transparent z-depth-0">
+			<div class="container">
+				<a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#logIn" class="transparent modal-trigger btn-large">Log In</a></li>
+					<li><a href="#signUp" class="transparent modal-trigger btn-large">Sign Up</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="row">
+			<div class="col s6"></div>
+			<div class="col s6 brand-logo">
+				<h1 class="brown-text text-lighten-5">Food Arena</h1>
+				<h3 class="brown-text text-lighten-3">You Order, We Deliver!!</h2>
+			</div>
+		</div>
+
+		<ul class="sidenav brown lighten-4" id="mobile-nav">
+			<li><a href="#logIn" class="modal-trigger">Log In</a></li>
+			<li><a href="#signUp" class="modal-trigger">Sign Up</a></li>
+		</ul>
+
+		<!-- LogIn Modal -->
+		<div id="logIn" class="modal brown lighten-5">
+			<form class="modal-content">
+				<div class="input-field">
+					<input type="text" id="name">
+					<label class="active" for="name">Name</label>
+				</div>
+				<div class="input-field">
+					<input type="email" id="email" class="validate">
+					<label class="active" for="email">Email</label>
+				</div>
+				<input type="button" class="btn brown" value="Log In">
+			</form>
+		</div>
+
+		<!-- SignUp Modal -->
+		<div id="signUp" class="modal brown lighten-5">
+			<form class="modal-content">
+				<div class="input-field">
+					<input type="text" id="name">
+					<label class="active" for="name">Name</label>
+				</div>
+				<div class="input-field">
+					<input type="email" id="email" class="validate">
+					<label class="active" for="email">Email</label>
+				</div>
+
+				<div class="input-field">
+					<input type="text" id="password1">
+					<label for="password1" class="active">Enter Password</label>
+				</div>
+
+				<div class="input-field">
+					<input type="password" id="password2">
+					<label for="password2" class="active">Confirm Passowrd</label>
+				</div>
+				<input type="button" class="btn brown center" value="Log In">
+			</form>
+		</div>
+	</header>
+
+
+	<!-- Fixed floating action button -->
+	<div class="fixed-action-btn">
+		<a href="#" class="btn-floating btn-large brown "><i class="large material-icons">expand_less</i></a>
+		<ul>
+			<li><a href="#features" data-tooltip="Our Features" class="tooltipped btn-floating brown btn-large"><i
+						class="large material-icons">star</i></a></li>
+			<li><a href="#search-bar" data-tooltip="Search" class="tooltipped btn-floating blue btn-large"><i
+						class="large material-icons">search</i></a></li>
+			<li><a href="#top-orders" data-tooltip="Top Orders" class="tooltipped btn-floating orange btn-large"><i
+						class="large material-icons">shopping_cart</i></a></li>
+			<li><a href="#contact" data-tooltip="Contact Us" class="tooltipped btn-floating teal btn-large"><i
+						class="large material-icons">contact_mail</i></a></li>
+		</ul>
+	</div>
+
+
+	<!-- Search Bar -->
+	<section class="section brown accent-2 lighten-5" id="search-bar">
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<h4>Search Your Favourite Dishes</h4>
+					<div class="input-field">
+						<input type="text" class="autocomplete" id="autocomplete-input"
+							placeholder="Biriyani, Appam, Noodles etc..">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Slider -->
+	<section>
+		<div class="slider">
+			<ul class="slides ">
+				<li>
+					<img src="./images/2959518.jpg" alt="" srcset="">
+					<div class="caption center-align black-text text-darken-4 ">
+						<h2>Enjoy Both Foreign and Indie Cusine</h2>
+						<h5 class="light grey-text text-lighten-3 hide-on-small-only brown-text text-darken-3 ">Lorem
+							ipsum dolor sit amet
+							consectetur adipisicing elit. Quidem, provident eos dicta unde debitis</h5>
+					</div>
+				</li>
+				<li>
+					<img src="images/2813122.jpg">
+					<div class="caption right-align white-text text-darken-4 ">
+						<h2 class="push-l2">Spend More time with your loved ones</h2>
+						<h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet
+							consectetur adipisicing elit. Possimus delectus inventore neque impedit</h5>
+					</div>
+				</li>
+				<li>
+					<img src="images//five-white-plates-with-different-kinds-of-dishes-54455.jpg">
+					<div class="caption left-align white-text text-darken-4 ">
+						<h3>Trust us to treat you with delicacies</h3>
+						<h6 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet
+							consectetur adipisicing elit. Sunt ipsum molestias excepturi doloremque</h6>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- Top Orders -->
+	<section class="section" id="top-orders">
+		<div class="container">
+			<h2>Top Orders</h2>
+		</div>
+		<div class="row" style="width: 90%;">
+			<div class="col s12 m4">
+				<div class="card">
+					<div class="card-image">
+						<img src="/images/noodles.jpg" alt="noodles" class="responsive-img materialboxed">
+						<a class="btn-floating halfway-fab waves-effect waves-light red"><i
+								class="material-icons">favorite</i></a>
+					</div>
+					<div class="card-content">
+						<span class="card-title">Schezwan Noodles</span>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					</div>
+					<div class="card-action">
+						<a href="#">Add To Cart</a>
+						<a href="#">Compare Prices</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4">
+				<div class="card">
+					<div class="card-image">
+						<img src="/images/biriyani.jpg" alt="biriyani" class="responsive-img materialboxed">
+						<a class="btn-floating halfway-fab waves-effect waves-light red"><i
+								class="material-icons">favorite</i></a>
+					</div>
+					<div class="card-content">
+						<span class="card-title">Chicken Biriyani</span>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					</div>
+					<div class="card-action">
+						<a href="#">Add To Cart</a>
+						<a href="#">Compare Prices</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4">
+				<div class="card">
+					<div class="card-image">
+						<img src="/images/Idli-and-Sambar-1.jpg" alt="Idli-and-Sambar"
+							class="responsive-img materialboxed">
+						<a class="btn-floating halfway-fab waves-effect waves-light red"><i
+								class="material-icons">favorite</i></a>
+					</div>
+					<div class="card-content">
+						<span class="card-title">Idli and Sambar</span>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					</div>
+					<div class="card-action">
+						<a href="#">Add To Cart</a>
+						<a href="#">Compare Prices</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Parallax -->
+	<section class="section">
+		<div class="parallax-container">
+			<div class="parallax">
+				<img src="images/parallax-2.jpg" alt="" class="responsive-img">
+			</div>
+		</div>
+	</section>
+
+	<!-- Features -->
+	<section class="section" id="features">
+		<div class="container">
+			<h2>Our Features</h2>
+			<div class="row">
+				<div class="col s12 m4">
+					<div class="card-panel center brown lighten-4">
+						<i class="material-icons large ">two_wheeler</i>
+						<h4>Lightning Fast Delivery</h4>
+						<p>If we are late by more than 30 minutes, you get your whole order for free!</p>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card-panel center brown lighten-4">
+						<i class="material-icons large ">restaurant</i>
+						<h4>Choose from a variety of restaurants..</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card-panel center brown lighten-4">
+						<i class="material-icons large ">attach_money</i>
+						<h4>Cash On Delivery Availble </h4>
+						<p>We accept Google Pay, PayTm, Rupay & all other online currencies</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <footer class="section brown darken-2 white-text center">
+    <p class="flow-text">FoodArena &copy; 2020 </p>
+  </footer> -->
+
+
+	<footer class="page-footer brown darken-2 contact">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 l6">
+					<h4>About FoodArena</h4>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis doloremque numquam amet vitae
+						qui rerum
+						ex oe!</p>
+					<p>Lorem sit, amet cetur adipisicing elit. Corporis doloremque numquam amet vitae qui rerum ex
+						officiis
+						tempore ad dolore!</p>
+				</div>
+				<div class="col s12 l4 offset-l2">
+					<h4>Connect</h4>
+					<ul>
+						<li><a class="grey-text text-lighten-4" href="">Facebook</a></li>
+						<li><a class="grey-text text-lighten-4" href="">Twitter</a></li>
+						<li><a class="grey-text text-lighten-4" href="">Instagram</a></li>
+						<li><a class="grey-text text-lighten-4" href="">LinkedIn</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright brown darken-4">
+			<div class="container center">&copy; 2019 FoodArena</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script>
+		$(document).ready(() => {
+			$('.modal').modal()
+			$('.sidenav').sidenav();
+			$('.fixed-action-btn').floatingActionButton();
+			$('.tooltipped').tooltip();
+			$('input.autocomplete').autocomplete({
+				data: {
+					"Appam": null,
+					"Biriyani": null,
+					"Noodles": 'https://placehold.it/250x250'
+				},
+			});
+			$('.slider').slider();
+			$('.parallax').parallax();
+			$('.materialboxed').materialbox();
+
+		})
+	</script>
+
+</body>
+
+</html>

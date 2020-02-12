@@ -1,0 +1,42 @@
+html{
+  scroll-behavior: smooth;
+}
+
+#landing-page {
+  background-image: url("./images/landing.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.brand-logo{
+    position: relative;
+    top: 25vh;
+}
+
+nav .btn-large{
+    position: relative;
+    top: 5vh;
+}
+ 
+@media screen and (max-width: 666px) {
+  #landing-page {
+    min-height: 450px;
+    background-position: -6.5em;
+  }
+
+  .brand-logo{
+      position: relative;
+      top: -4vh;
+  }
+}
+
+.slider{
+  min-height: 75vh;
+}
+
+ #search-bar{
+  min-height: 40vh;
+  padding-top: 40px;
+} 
+
