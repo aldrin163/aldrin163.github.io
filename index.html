@@ -72,7 +72,7 @@
 					<input type="password" id="password2">
 					<label for="password2" class="active">Confirm Passowrd</label>
 				</div>
-				<input type="button" class="btn brown center" value="Log In">
+				<input type="button" class="btn brown center" value="Sign Up">
 			</form>
 		</div>
 	</header>
@@ -80,14 +80,16 @@
 
 	<!-- Fixed floating action button -->
 	<div class="fixed-action-btn">
-		<a href="#" class="btn-floating btn-large brown "><i class="large material-icons">expand_less</i></a>
+		<a class="btn-floating btn-large brown "><i class="large material-icons">expand_less</i></a>
 		<ul>
-			<li><a href="#features" data-tooltip="Our Features" class="tooltipped btn-floating brown btn-large"><i
-						class="large material-icons">star</i></a></li>
+			<li><a href="#landing-page" data-tooltip="Home" class="tooltipped btn-floating red lighten-1 btn-large"><i
+						class="large material-icons">home</i></a></li>
 			<li><a href="#search-bar" data-tooltip="Search" class="tooltipped btn-floating blue btn-large"><i
 						class="large material-icons">search</i></a></li>
 			<li><a href="#top-orders" data-tooltip="Top Orders" class="tooltipped btn-floating orange btn-large"><i
 						class="large material-icons">shopping_cart</i></a></li>
+			<li><a href="#features" data-tooltip="Our Features" class="tooltipped btn-floating brown btn-large"><i
+						class="large material-icons">star</i></a></li>
 			<li><a href="#contact" data-tooltip="Contact Us" class="tooltipped btn-floating teal btn-large"><i
 						class="large material-icons">contact_mail</i></a></li>
 		</ul>
@@ -282,7 +284,9 @@
 		$(document).ready(() => {
 			$('.modal').modal()
 			$('.sidenav').sidenav();
-			$('.fixed-action-btn').floatingActionButton();
+			$('.fixed-action-btn').floatingActionButton({
+				// hoverEnabled: false
+			});
 			$('.tooltipped').tooltip();
 			$('input.autocomplete').autocomplete({
 				data: {
