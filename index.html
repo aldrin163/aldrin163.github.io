@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <link rel="stylesheet" href="./materialize_min.css"> -->
+	<link rel="stylesheet" href="./materialize_min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" href="./styles.css">
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
@@ -16,7 +16,7 @@
 	<header id="landing-page">
 		<nav class="nav-wrapper transparent z-depth-0">
 			<div class="container">
-				<a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons large">account_circle</i></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="#logIn" class="transparent modal-trigger btn-large">Log In</a></li>
 					<li><a href="#signUp" class="transparent modal-trigger btn-large">Sign Up</a></li>
@@ -80,13 +80,13 @@
 
 	<!-- Fixed floating action button -->
 	<div class="fixed-action-btn">
-		<a class="btn-floating btn-large brown "><i class="large material-icons">expand_less</i></a>
+		<a class="btn-floating btn-large brown"><i class="large material-icons">menu</i></a>
 		<ul>
-			<li><a href="#landing-page" data-tooltip="Home" class="tooltipped btn-floating red lighten-1 btn-large"><i
+			<li><a href="#landing-page" data-tooltip="Home" class="tooltipped btn-floating red lighten-2 btn-large"><i
 						class="large material-icons">home</i></a></li>
-			<li><a href="#search-bar" data-tooltip="Search" class="tooltipped btn-floating blue btn-large"><i
+			<li><a href="#search-bar" data-tooltip="Search" class="tooltipped btn-floating blue lighten-2 btn-large"><i
 						class="large material-icons">search</i></a></li>
-			<li><a href="#top-orders" data-tooltip="Top Orders" class="tooltipped btn-floating orange btn-large"><i
+			<li><a href="#top-orders" data-tooltip="Top Orders" class="tooltipped btn-floating orange lighten-1 btn-large"><i
 						class="large material-icons">shopping_cart</i></a></li>
 			<li><a href="#features" data-tooltip="Our Features" class="tooltipped btn-floating brown btn-large"><i
 						class="large material-icons">star</i></a></li>
@@ -219,19 +219,19 @@
 	<section class="section" id="features">
 		<div class="container">
 			<h2>Our Features</h2>
-			<div class="row valign-wrapper">
-				<div class="col s12 m4">
-					<div class="card-panel center brown lighten-4">
-						<i class="material-icons large ">two_wheeler</i>
-						<h4>Lightning Fast Delivery</h4>
-						<p>If we are late by more than 30 minutes, you get your whole order for free!</p>
-					</div>
-				</div>
+			<div class="row">
 				<div class="col s12 m4">
 					<div class="card-panel center brown lighten-4">
 						<i class="material-icons large ">restaurant</i>
 						<h4>Choose from a variety of restaurants</h4>
 						<p>Choose from the hotel of your choice.</p>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card-panel center brown lighten-4">
+						<i class="material-icons large ">two_wheeler</i>
+						<h4>Lightning Fast Delivery</h4>
+						<p>If we are late by more than 30 minutes, you get your whole order for free!</p>
 					</div>
 				</div>
 				<div class="col s12 m4">
@@ -285,7 +285,7 @@
 			$('.modal').modal()
 			$('.sidenav').sidenav();
 			$('.fixed-action-btn').floatingActionButton({
-				// hoverEnabled: false
+				hoverEnabled: false
 			});
 			$('.tooltipped').tooltip();
 			$('input.autocomplete').autocomplete({
