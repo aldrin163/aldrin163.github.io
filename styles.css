@@ -3,7 +3,7 @@ html{
 }
 
 #landing-page {
-  background-image: url("./images/landing.jpg");
+  background-image: url("./images/landing-min.jpg");
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
