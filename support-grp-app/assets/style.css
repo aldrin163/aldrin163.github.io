@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.box{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    
+    position:absolute;
+    left:12%;
+    top:12%;
+    width:800px;
+    height:450px;
+    box-shadow:10px 10px 10px 15px rgb(221, 220, 220);
+}
+.box input[type="text"],.box input[type="password"]{
+    margin:5px;
+    outline:none;
+    border:1px solid whitesmoke;
+    border-radius: 24px;
+    padding:13px 50px;
+    background: none;
+    
+}
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+    border:1px solid rgb(248, 40, 12);
+    outline:none;
+    border-radius: 24px;
+    width:200px;
+    
+    
+}
+.box input[type="submit"]{
+    background: rgb(248, 40, 12);
+    outline:none;
+    padding: 10px 40px;
+    border-radius:24px;
+    color:white;
+    font-family: cursive;
+    letter-spacing: 2px;
+    border: 1px solid rgb(248, 40, 12);
+}
+.box input[type="submit"]:focus{
+    
+    
+    width:140px;
+    font-weight: bolder;
+}
+
+h1{
+    font-size:50px;
+    font-family:Courier;
+}
+h5{
+    font-size:15px;
+    font-weight:lighter;
+    letter-spacing: 1px;
+    font-family: cursive;
+}
+
+.sidepage{
+    background-image: url("sidepage.jpg"); 
+    background-size:cover;
+    text-align: center;
+    padding:8%;
+}
